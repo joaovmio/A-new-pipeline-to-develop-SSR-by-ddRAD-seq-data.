@@ -3,5 +3,6 @@
 
 This pipeline was developed using ddRAD-seq (double digestion restriction-site associated DNA sequence) data from Agave sp accessions and the reference genome. This code crosses these two types of information, first generating the microsatellites (SSR), then filtering only the reads containing these markers and finally filtering again only the polymorphic regions in relation to the reference genome, identifying insertions and deletions using the CIGAR alignment pattern. The design of primers for the in vitro validation of polymorphic regions can be done using the PRIMER3 platform (recommended). 
 
-![image](https://github.com/user-attachments/assets/eb17c070-f7c0-4480-b465-8a2c398ecca5)
+![image](https://github.com/user-attachments/assets/5af9cbbf-d770-49e1-ba46-9fa1a20f5aeb)
+
 
