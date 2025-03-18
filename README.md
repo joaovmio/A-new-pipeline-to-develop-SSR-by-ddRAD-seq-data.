@@ -81,14 +81,14 @@ parallel -a ssr.misa --delay 0.2 -j 50 --joblog "parallel.log" --resume-failed s
 Explanation of Parameters:
 
 ```bash
--a → Input file for parallel
+-a # → Input file for parallel
 
---delay → Time interval between job submissions
+--delay # → Time interval between job submissions
 
--j → Number of jobs executed simultaneously
+-j # → Number of jobs executed simultaneously
 
---joblog → Log file storing job execution details
+--joblog # → Log file storing job execution details
 
---resume-failed → Helps resume jobs in case of unexpected interruptions
+--resume-failed # → Helps resume jobs in case of unexpected interruptions
 ```
 
