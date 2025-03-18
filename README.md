@@ -66,5 +66,29 @@ for i in *.bam; do samtools sort ${i} -o ${i}_sorted.bam; done
 for file in *.bam ; do bedtools bamtobed -i $file -cigar > $file.bed ; done
 ```
 
+### 3. Identifying SSR Loci in ddRAD Data
 
+For identifying ddRAD-seq reads containing microsatellites, the subtract module from Bedtools is used. The schematic below summarizes this step, and at the end, you obtain the start and end positions of reads containing microsatellites within the sequences.
+
+The code was developed in Python (ssr_ddrad.py) and it is highly recommended to execute it using parallel for time optimization and processing efficiency of each microsatellite. The file ssr.misa is the input file containing the microsatellites, and list_beds.txt contains the paths and names of the BED files corresponding to the sequenced individuals.
+
+To run the analysis, use the following command:
+
+```bash
+parallel -a ssr.misa --delay 0.2 -j 50 --joblog "parallel.log" --resume-failed srun -c 1 --mem="20G" python3 ssr_ddrad.py '{}' list_beds.txt
+```
+
+Explanation of Parameters:
+
+```bash
+-a → Input file for parallel
+
+--delay → Time interval between job submissions
+
+-j → Number of jobs executed simultaneously
+
+--joblog → Log file storing job execution details
+
+--resume-failed → Helps resume jobs in case of unexpected interruptions
+```
 
