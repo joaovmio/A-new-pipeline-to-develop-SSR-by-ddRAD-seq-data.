@@ -94,7 +94,7 @@ Explanation of Parameters:
 
 ### 4. Identification of Polymorphic Regions and Data Tabulation
 
-From the reads found with the microsatellites, it is necessary to identify which of them have some kind of polymorphism. This pipeline focuses only on identifying Insertions (I) and Deletions (D) by reading the CIGAR (Concise Idiosyncratic Gapped Alignment Report) patterns. The code that performs this step is named “code_polimorf.py”. It is necessary to install the Cigar package for the Python language, available at: https://github.com/brentp/cigar; but you can also follow the installation tutorial via conda https://anaconda.org/bioconda/cigar. 
+From the reads found with the microsatellites, it is necessary to identify which of them have some kind of polymorphism. This pipeline focuses only on identifying Insertions (I) and Deletions (D) by reading the CIGAR (Concise Idiosyncratic Gapped Alignment Report) patterns. The code that performs this step is named ```code_polimorf.py```. It is necessary to install the Cigar package for the Python language, available at: https://github.com/brentp/cigar; but you can also follow the installation tutorial via conda https://anaconda.org/bioconda/cigar. 
 
 ![image](https://github.com/user-attachments/assets/ea85e325-902c-4784-b4e1-e50576d52cbb)
 
