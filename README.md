@@ -98,4 +98,4 @@ From the reads found with the microsatellites, it is necessary to identify which
 
 ![image](https://github.com/user-attachments/assets/ea85e325-902c-4784-b4e1-e50576d52cbb)
 
-The tabular formatting of this data is carried out using the script ```format_table.py`` with the command ```python3 format_table.py list_bed_files.txt``, where ```list_bed_files.txt`` is a list of the bed files of the reads identified as being polymorphic. 
+The tabular formatting of this data is carried out using the script ```format_table.py``` with the command ```python3 format_table.py list_bed_files.txt```, where ```list_bed_files.txt``` is a list of the bed files of the reads identified as being polymorphic. 
